@@ -1,0 +1,29 @@
+main {
+  .custom-container {
+    .custom-row {
+      @include make-row(20px);
+
+      //    .custom-col-lg-2 {
+      //              @include make-lg-column(2, 30px); }
+
+      @for $i from 1 through 12 {
+        .custom-col-lg-#{$i} {
+          @include make-lg-column($i, 30px);
+        }
+      }
+
+      @for $i from 1 through 12 {
+        .custom-col-md-#{$i} {
+          @include make-md-column($i, 20px);
+        }
+      }
+
+//      @for $i from 1 through 12 {
+//        .custom-col-sm-#{$i} {
+//          @include make-sm-column($i, 20px);
+//        }
+//      }
+
+    }
+  }
+}

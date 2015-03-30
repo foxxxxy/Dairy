@@ -1,0 +1,55 @@
+header {
+  position: fixed;
+  width: 100%;
+  height: 56px;
+  z-index: 1000;
+
+  nav {
+    .navbar-header {
+      float: left;
+      @include box-sizing(border-box);
+
+      button {
+        width: 56px;
+        height: 56px;
+        border: 0;
+        background: rgba(0, 0, 0, 0.5) url(../../images/header/menu.svg) no-repeat center;
+        background-size: 16px 10px;
+
+        &:active {
+          background-color: #4ccde8;
+        }
+      }
+    }
+
+    .collapse-navbar {
+      float: left;
+      ul {
+        font-size: 0;
+
+        li {
+          display: inline-block;
+          font-size: 16px;
+
+          a {
+            background: url(../../images/header/add.svg) no-repeat center;
+
+            text-align: right;
+            text-decoration: underline;
+
+            &:hover {
+              background: none;
+            }
+          }
+
+          &:first-child {
+            a {
+              text-decoration: none;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }
+}
