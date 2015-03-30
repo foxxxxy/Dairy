@@ -6047,11 +6047,12 @@ header nav .collapse-navbar ul {
 /* line 30, ../scss/widgets/_header.scss */
 header nav .collapse-navbar ul li {
   display: inline-block;
+  line-height: 56px;
   font-size: 16px;
 }
-/* line 34, ../scss/widgets/_header.scss */
+/* line 35, ../scss/widgets/_header.scss */
 header nav .collapse-navbar ul li a {
-  background: url(../../images/header/add.svg) no-repeat center;
+  font-family: "Roboto", sans-serif;
   text-align: right;
   text-decoration: underline;
 }
@@ -6059,10 +6060,73 @@ header nav .collapse-navbar ul li a {
 header nav .collapse-navbar ul li a:hover {
   background: none;
 }
-/* line 46, ../scss/widgets/_header.scss */
+/* line 44, ../scss/widgets/_header.scss */
+header nav .collapse-navbar ul li a time {
+  display: inline-block;
+  text-align: center;
+}
+/* line 50, ../scss/widgets/_header.scss */
+header nav .collapse-navbar ul li .add {
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: url(../../images/header/add.svg);
+  background-size: 14px 14px;
+  background-repeat: no-repeat;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+}
+/* line 61, ../scss/widgets/_header.scss */
+header nav .collapse-navbar ul li .month {
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: url(../../images/header/month.svg);
+  background-size: 14px 14px;
+  background-repeat: no-repeat;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+}
+/* line 72, ../scss/widgets/_header.scss */
+header nav .collapse-navbar ul li .search {
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: url(../../images/header/search.svg);
+  background-size: 14px 14px;
+  background-repeat: no-repeat;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+}
+/* line 83, ../scss/widgets/_header.scss */
+header nav .collapse-navbar ul li .notification {
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: url(../../images/header/notification.svg);
+  background-size: 14px 14px;
+  background-repeat: no-repeat;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+}
+/* line 95, ../scss/widgets/_header.scss */
 header nav .collapse-navbar ul li:first-child a {
   text-decoration: none;
   font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+/* line 104, ../scss/widgets/_header.scss */
+header nav .collapse-navbar ul li:last-child a img {
+  height: 56px;
+  width: 56px;
 }
 
 /* line 1, ../scss/layouts/_portfolio.scss */
@@ -6072,7 +6136,7 @@ header nav .collapse-navbar ul li:first-child a {
 }
 /* line 5, ../scss/layouts/_portfolio.scss */
 .homepage .portfolio figure {
-  margin: 20px 0;
+  margin: 10px 0;
   height: 140px;
   overflow: hidden;
 }
@@ -6092,8 +6156,8 @@ header nav .collapse-navbar ul li:first-child a {
 
 /* line 3, ../scss/core/_grid.scss */
 main .custom-container .custom-row {
-  margin-left: -10px;
-  margin-right: -10px;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 /* line 14, ../../../../../../../var/lib/gems/1.9.1/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
 main .custom-container .custom-row:before, main .custom-container .custom-row:after {

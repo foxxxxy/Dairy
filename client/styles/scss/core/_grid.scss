@@ -1,7 +1,7 @@
 main {
   .custom-container {
     .custom-row {
-      @include make-row(20px);
+      @include make-row();
 
       //    .custom-col-lg-2 {
       //              @include make-lg-column(2, 30px); }
