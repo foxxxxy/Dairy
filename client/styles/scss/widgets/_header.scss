@@ -5,47 +5,52 @@ header {
   z-index: 1000;
 
   nav {
+    line-height: 45px;
+
     .navbar-header {
       float: left;
-      @include box-sizing(border-box);
 
       button {
         width: 56px;
         height: 56px;
         border: 0;
         background: rgba(0, 0, 0, 0.5) url(../../images/header/menu.svg) no-repeat center;
-        background-size: 16px 10px;
+        //        background: rgba(0, 0, 0, 0.5) url(../../images/header/menu.svg) no-repeat center;
+        background-size: 16px 16px;
 
         &:active {
           background-color: #4ccde8;
         }
       }
+
     }
 
     .collapse-navbar {
-      float: left;
+      height: 56px;
+      background-color: rgba(0, 0, 0, 0.5);
+
+      a {
+        &:first-child{
+          padding-left: 20px;
+          font-family: "Roboto", sans-serif;
+          font-weight: 700;
+        }
+      }
+
+      time {
+        display: inline-block;
+        text-decoration: underline;
+        font-weight: 400;
+      }
+
       ul {
+        float: right;
         font-size: 0;
 
         li {
           display: inline-block;
+          padding-left: 20px;
           line-height: 56px;
-          font-size: 16px;
-
-          a {
-            font-family: "Roboto", sans-serif;
-            text-align: right;
-            text-decoration: underline;
-
-            &:hover {
-              background: none;
-            }
-
-            time {
-              display: inline-block;
-              text-align: center;
-            }
-          }
 
           .add {
             display: block;
@@ -90,22 +95,13 @@ header {
             @include transition-property(all);
             @include transition-duration(200ms);
           }
-
-          &:first-child {
-            a {
-              text-decoration: none;
-              font-weight: 700;
-              font-family: "Roboto", sans-serif;
-            }
+          a {
+            text-decoration: none;
           }
 
-          &:last-child {
-            a {
-              img {
-                height: 56px;
-                width: 56px;
-              }
-            }
+          img {
+            height: 56px;
+            width: 56px;
           }
         }
       }
