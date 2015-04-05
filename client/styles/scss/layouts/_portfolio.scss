@@ -1,10 +1,14 @@
 .portfolio {
   padding-top: 95px;
   z-index: -1000;
+  @include user-select(none);
 
   .add-photo {
 
     figcaption {
+      top: 40%;
+      left: 30%;
+
       p {
         font-family: 'Roboto Condensed', sans-serif;
         font-size: 18px;
@@ -24,7 +28,6 @@
     position: relative;
     margin: 10px 0;
     height: 140px;
-    //    overflow: hidden;
 
     &:first-child {
       background-color: #4ccde8;
@@ -40,13 +43,9 @@
     }
 
     figcaption {
-      top: 0;
+      left: 15px;
       bottom: 0;
       position: absolute;
-
-      &:first-child {
-
-      }
 
       h3 {
         font-family: "Roboto", sans-serif;

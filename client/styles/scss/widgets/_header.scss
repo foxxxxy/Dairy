@@ -3,6 +3,7 @@ header {
   width: 100%;
   height: 56px;
   z-index: 1000;
+  @include user-select(none);
 
   nav {
     line-height: 45px;
@@ -30,17 +31,28 @@ header {
       background-color: rgba(0, 0, 0, 0.5);
 
       a {
-        &:first-child{
+        &:first-child {
           padding-left: 20px;
           font-family: "Roboto", sans-serif;
           font-weight: 700;
         }
       }
 
-      time {
+      .date {
+        padding-left: 0;
+        position: relative;
+        left: 40%;
         display: inline-block;
-        text-decoration: underline;
-        font-weight: 400;
+        text-align: center;
+
+        time {
+          padding: 0;
+          margin: 0;
+          position: relative;
+          left: -40%;
+          text-decoration: underline;
+          font-weight: 400;
+        }
       }
 
       .navbar-right {
@@ -101,6 +113,7 @@ header {
           }
 
           img {
+            vertical-align: top;
             height: 56px;
             width: 56px;
           }
