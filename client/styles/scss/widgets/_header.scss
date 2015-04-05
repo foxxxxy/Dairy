@@ -21,6 +21,7 @@ header {
 
         &:active {
           background-color: #4ccde8;
+          border: 0;
         }
       }
 
@@ -39,17 +40,16 @@ header {
       }
 
       .date {
-        padding-left: 0;
-        position: relative;
-        left: 40%;
+//        position: relative;
+//        left: 40%;
         display: inline-block;
         text-align: center;
 
         time {
-          position: relative;
-          left: -40%;
+//          position: relative;
+//          left: -40%;
           text-decoration: underline;
-          font-weight: 400;
+          font-weight: 700;
         }
       }
 
@@ -68,6 +68,7 @@ header {
             width: 14px;
             height: 14px;
             background: url(../../images/header/add.svg);
+            fill: #fff;
             background-size: 14px 14px;
             background-repeat: no-repeat;
             @include transition-property(all);

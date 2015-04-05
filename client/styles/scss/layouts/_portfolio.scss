@@ -3,10 +3,27 @@
   z-index: -1000;
   @include user-select(none);
 
+  .add {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background: #4ccde8 url(../../images/portfolio/star.svg) no-repeat center;
+      background-size: 30px 30px;
+      fill: #fff;
+      top: -10px;
+      left: -10px;
+      @include rotate(45deg);
+    }
+  }
+
   .add-photo {
     figcaption {
-      top: 40%;
-      left: 30%;
+      text-align: center;
+      line-height: 120px;
 
       p {
         font-family: 'Roboto Condensed', sans-serif;
@@ -20,6 +37,8 @@
         }
       }
     }
+
+
   }
 
   figure {
@@ -41,14 +60,16 @@
     }
 
     figcaption {
-      left: 15px;
+      left: 0;
       bottom: 0;
       position: absolute;
+      padding-left: 15px;
+      width: 100%;
 
       h3 {
         font-family: "Roboto", sans-serif;
         font-weight: 100;
-        @include lines(22px, 1, 1);
+        @include lines();
       }
 
       p {

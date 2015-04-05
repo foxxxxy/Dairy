@@ -6042,32 +6042,28 @@ header nav .navbar-header button {
 /* line 22, ../scss/widgets/_header.scss */
 header nav .navbar-header button:active {
   background-color: #4ccde8;
+  border: 0;
 }
-/* line 29, ../scss/widgets/_header.scss */
+/* line 30, ../scss/widgets/_header.scss */
 header nav .collapse-navbar {
   height: 56px;
   background-color: rgba(0, 0, 0, 0.5);
 }
-/* line 34, ../scss/widgets/_header.scss */
+/* line 35, ../scss/widgets/_header.scss */
 header nav .collapse-navbar a:first-child {
   padding-left: 20px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
-/* line 41, ../scss/widgets/_header.scss */
+/* line 42, ../scss/widgets/_header.scss */
 header nav .collapse-navbar .date {
-  padding-left: 0;
-  position: relative;
-  left: 40%;
   display: inline-block;
   text-align: center;
 }
 /* line 48, ../scss/widgets/_header.scss */
 header nav .collapse-navbar .date time {
-  position: relative;
-  left: -40%;
   text-decoration: underline;
-  font-weight: 400;
+  font-weight: 700;
 }
 /* line 56, ../scss/widgets/_header.scss */
 header nav .collapse-navbar .navbar-right {
@@ -6087,6 +6083,7 @@ header nav .collapse-navbar .navbar-right li .add {
   width: 14px;
   height: 14px;
   background: url(../../images/header/add.svg);
+  fill: #fff;
   background-size: 14px 14px;
   background-repeat: no-repeat;
   -webkit-transition-property: all;
@@ -6094,7 +6091,7 @@ header nav .collapse-navbar .navbar-right li .add {
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 77, ../scss/widgets/_header.scss */
+/* line 78, ../scss/widgets/_header.scss */
 header nav .collapse-navbar .navbar-right li .month {
   display: block;
   width: 14px;
@@ -6107,7 +6104,7 @@ header nav .collapse-navbar .navbar-right li .month {
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 88, ../scss/widgets/_header.scss */
+/* line 89, ../scss/widgets/_header.scss */
 header nav .collapse-navbar .navbar-right li .search {
   display: block;
   width: 14px;
@@ -6120,7 +6117,7 @@ header nav .collapse-navbar .navbar-right li .search {
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 99, ../scss/widgets/_header.scss */
+/* line 100, ../scss/widgets/_header.scss */
 header nav .collapse-navbar .navbar-right li .notification {
   display: block;
   width: 14px;
@@ -6133,11 +6130,11 @@ header nav .collapse-navbar .navbar-right li .notification {
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 109, ../scss/widgets/_header.scss */
+/* line 110, ../scss/widgets/_header.scss */
 header nav .collapse-navbar .navbar-right li a {
   text-decoration: none;
 }
-/* line 113, ../scss/widgets/_header.scss */
+/* line 114, ../scss/widgets/_header.scss */
 header nav .collapse-navbar .navbar-right li img {
   vertical-align: top;
   height: 56px;
@@ -6154,34 +6151,54 @@ header nav .collapse-navbar .navbar-right li img {
   user-select: none;
   cursor: default;
 }
-/* line 7, ../scss/layouts/_portfolio.scss */
-.homepage .portfolio .add-photo figcaption {
-  top: 40%;
-  left: 30%;
+/* line 6, ../scss/layouts/_portfolio.scss */
+.homepage .portfolio .add {
+  position: relative;
 }
-/* line 11, ../scss/layouts/_portfolio.scss */
+/* line 9, ../scss/layouts/_portfolio.scss */
+.homepage .portfolio .add::after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: #4ccde8 url(../../images/portfolio/star.svg) no-repeat center;
+  background-size: 30px 30px;
+  fill: #fff;
+  top: -10px;
+  left: -10px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* line 24, ../scss/layouts/_portfolio.scss */
+.homepage .portfolio .add-photo figcaption {
+  text-align: center;
+  line-height: 120px;
+}
+/* line 28, ../scss/layouts/_portfolio.scss */
 .homepage .portfolio .add-photo figcaption p {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 18px;
   color: #fff;
 }
-/* line 16, ../scss/layouts/_portfolio.scss */
+/* line 33, ../scss/layouts/_portfolio.scss */
 .homepage .portfolio .add-photo figcaption p span {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   color: #fff;
 }
-/* line 25, ../scss/layouts/_portfolio.scss */
+/* line 44, ../scss/layouts/_portfolio.scss */
 .homepage .portfolio figure {
   position: relative;
   margin: 10px 0;
   height: 140px;
 }
-/* line 30, ../scss/layouts/_portfolio.scss */
+/* line 49, ../scss/layouts/_portfolio.scss */
 .homepage .portfolio figure:first-child {
   background-color: #4ccde8;
 }
-/* line 34, ../scss/layouts/_portfolio.scss */
+/* line 53, ../scss/layouts/_portfolio.scss */
 .homepage .portfolio figure .image {
   overflow: hidden;
   width: 100%;
@@ -6190,37 +6207,24 @@ header nav .collapse-navbar .navbar-right li img {
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* line 43, ../scss/layouts/_portfolio.scss */
+/* line 62, ../scss/layouts/_portfolio.scss */
 .homepage .portfolio figure figcaption {
-  left: 15px;
+  left: 0;
   bottom: 0;
   position: absolute;
+  padding-left: 15px;
+  width: 100%;
 }
-/* line 48, ../scss/layouts/_portfolio.scss */
+/* line 69, ../scss/layouts/_portfolio.scss */
 .homepage .portfolio figure figcaption h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
-  overflow: hidden;
-  display: block;
-  /* Fallback for non-webkit */
-  display: -webkit-box;
-  height: 22px;
-  /* Fallback for non-webkit */
-  font-size: 22px;
-  line-height: 1;
-  -webkit-line-clamp: 1;
-  -o-line-clamp: 1;
-  -ms-line-clamp: 1;
-  -moz-line-clamp: 1;
-  line-clamp: 1;
-  box-orient: vertical;
-  -webkit-box-orient: vertical;
-  -o-orient: vertical;
-  -ms-orient: vertical;
-  -moz-orient: vertical;
   text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: break-word;
+  overflow: hidden;
 }
-/* line 54, ../scss/layouts/_portfolio.scss */
+/* line 75, ../scss/layouts/_portfolio.scss */
 .homepage .portfolio figure figcaption p {
   font-family: "Roboto", sans-serif;
   font-size: 12px;

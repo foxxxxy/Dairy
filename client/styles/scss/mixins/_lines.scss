@@ -1,19 +1,6 @@
-@mixin lines($font-size, $line-height, $lines-to-show) {
+@mixin lines() {
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  word-wrap: break-word;
   overflow: hidden;
-  display: block; /* Fallback for non-webkit */
-  display: -webkit-box;
-  height: $font-size*$line-height*$lines-to-show; /* Fallback for non-webkit */
-  font-size: $font-size;
-  line-height: $line-height;
-  -webkit-line-clamp: $lines-to-show;
-  -o-line-clamp: $lines-to-show;
-  -ms-line-clamp: $lines-to-show;
-  -moz-line-clamp: $lines-to-show;
-  line-clamp: $lines-to-show;
-  box-orient: vertical;
-  -webkit-box-orient: vertical;
-  -o-orient: vertical;
-  -ms-orient: vertical;
-  -moz-orient: vertical;
-  text-overflow: ellipsis;
 }
