@@ -4,7 +4,6 @@
   @include user-select(none);
 
   .add-photo {
-
     figcaption {
       top: 40%;
       left: 30%;
@@ -21,7 +20,6 @@
         }
       }
     }
-
   }
 
   figure {
@@ -49,8 +47,8 @@
 
       h3 {
         font-family: "Roboto", sans-serif;
-        font-size: 22px;
         font-weight: 100;
+        @include lines(22px, 1, 1);
       }
 
       p {
