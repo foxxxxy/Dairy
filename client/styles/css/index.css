@@ -6060,113 +6060,96 @@ header nav .collapse-navbar .date {
   display: inline-block;
   text-align: center;
 }
-/* line 48, ../scss/widgets/_header.scss */
+/* line 46, ../scss/widgets/_header.scss */
 header nav .collapse-navbar .date time {
   text-decoration: underline;
   font-weight: 700;
 }
-/* line 56, ../scss/widgets/_header.scss */
+/* line 52, ../scss/widgets/_header.scss */
 header nav .collapse-navbar .navbar-right {
   margin: 0;
   float: right;
   font-size: 0;
 }
-/* line 61, ../scss/widgets/_header.scss */
+/* line 57, ../scss/widgets/_header.scss */
 header nav .collapse-navbar .navbar-right li {
   display: inline-block;
-  padding-left: 20px;
   line-height: 56px;
 }
-/* line 66, ../scss/widgets/_header.scss */
-header nav .collapse-navbar .navbar-right li .add {
-  display: block;
+/* line 61, ../scss/widgets/_header.scss */
+header nav .collapse-navbar .navbar-right li .svg-add {
   width: 14px;
   height: 14px;
-  background: url(../../images/header/add.svg);
-  fill: #fff;
-  background-size: 14px 14px;
-  background-repeat: no-repeat;
+}
+/* line 64, ../scss/widgets/_header.scss */
+header nav .collapse-navbar .navbar-right li .svg-add polygon {
+  fill: #4ccde8;
   -webkit-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
+}
+/* line 71, ../scss/widgets/_header.scss */
+header nav .collapse-navbar .navbar-right li .svg-add:hover polygon {
+  fill: #ffffff;
 }
 /* line 77, ../scss/widgets/_header.scss */
-header nav .collapse-navbar .navbar-right li .add:hover {
-  background: url(../../images/header/hover/add-hover.svg);
-  background-size: 14px 14px;
-  background-repeat: no-repeat;
+header nav .collapse-navbar .navbar-right li .svg-month {
+  width: 14px;
+  height: 14px;
+  fill: #4ccde8;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
 }
 /* line 84, ../scss/widgets/_header.scss */
-header nav .collapse-navbar .navbar-right li .month {
-  display: block;
+header nav .collapse-navbar .navbar-right li .svg-month:hover {
+  fill: #ffffff;
+}
+/* line 89, ../scss/widgets/_header.scss */
+header nav .collapse-navbar .navbar-right li .svg-search {
   width: 14px;
   height: 14px;
-  background: url(../../images/header/month.svg);
-  background-size: 14px 14px;
-  background-repeat: no-repeat;
+}
+/* line 92, ../scss/widgets/_header.scss */
+header nav .collapse-navbar .navbar-right li .svg-search path:last-child {
+  fill: #4ccde8;
   -webkit-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 94, ../scss/widgets/_header.scss */
-header nav .collapse-navbar .navbar-right li .month:hover {
-  background: url(../../images/header/hover/month-hover.svg);
-  background-size: 14px 14px;
-  background-repeat: no-repeat;
+/* line 98, ../scss/widgets/_header.scss */
+header nav .collapse-navbar .navbar-right li .svg-search:hover path:last-child {
+  fill: #ffffff;
 }
-/* line 101, ../scss/widgets/_header.scss */
-header nav .collapse-navbar .navbar-right li .search {
-  display: block;
+/* line 104, ../scss/widgets/_header.scss */
+header nav .collapse-navbar .navbar-right li .svg-notification {
   width: 14px;
   height: 14px;
-  background: url(../../images/header/search.svg);
-  background-size: 14px 14px;
-  background-repeat: no-repeat;
+}
+/* line 107, ../scss/widgets/_header.scss */
+header nav .collapse-navbar .navbar-right li .svg-notification path {
+  fill: #4ccde8;
   -webkit-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 111, ../scss/widgets/_header.scss */
-header nav .collapse-navbar .navbar-right li .search:hover {
-  background: url(../../images/header/hover/search-hover.svg);
-  background-size: 14px 14px;
-  background-repeat: no-repeat;
+/* line 114, ../scss/widgets/_header.scss */
+header nav .collapse-navbar .navbar-right li .svg-notification:hover path {
+  fill: #ffffff;
 }
-/* line 118, ../scss/widgets/_header.scss */
-header nav .collapse-navbar .navbar-right li .notification {
-  display: block;
-  width: 14px;
-  height: 14px;
-  background: url(../../images/header/notification.svg);
-  background-size: 14px 14px;
-  background-repeat: no-repeat;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-}
-/* line 128, ../scss/widgets/_header.scss */
-header nav .collapse-navbar .navbar-right li .notification:hover {
-  background: url(../../images/header/hover/notification-hover.svg);
-  background-size: 14px 14px;
-  background-repeat: no-repeat;
-}
-/* line 135, ../scss/widgets/_header.scss */
+/* line 120, ../scss/widgets/_header.scss */
 header nav .collapse-navbar .navbar-right li a {
   text-decoration: none;
 }
-/* line 139, ../scss/widgets/_header.scss */
-header nav .collapse-navbar .navbar-right li img {
+/* line 123, ../scss/widgets/_header.scss */
+header nav .collapse-navbar .navbar-right li a img {
   vertical-align: top;
   height: 56px;
   width: 56px;
-}
-/* line 146, ../scss/widgets/_header.scss */
-header nav .collapse-navbar .navbar-right li:last-child a {
-  padding-left: 0;
 }
 
 /* line 1, ../scss/layouts/_portfolio.scss */
@@ -6242,8 +6225,9 @@ header nav .collapse-navbar .navbar-right li:last-child a {
   position: absolute;
   padding-left: 15px;
   width: 100%;
+  line-height: 1;
 }
-/* line 69, ../scss/layouts/_portfolio.scss */
+/* line 70, ../scss/layouts/_portfolio.scss */
 .homepage .portfolio figure figcaption h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
@@ -6252,7 +6236,7 @@ header nav .collapse-navbar .navbar-right li:last-child a {
   word-wrap: break-word;
   overflow: hidden;
 }
-/* line 75, ../scss/layouts/_portfolio.scss */
+/* line 76, ../scss/layouts/_portfolio.scss */
 .homepage .portfolio figure figcaption p {
   font-family: "Roboto", sans-serif;
   font-size: 12px;

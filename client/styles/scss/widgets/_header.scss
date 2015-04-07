@@ -40,14 +40,10 @@ header {
       }
 
       .date {
-        //        position: relative;
-        //        left: 40%;
         display: inline-block;
         text-align: center;
 
         time {
-          //          position: relative;
-          //          left: -40%;
           text-decoration: underline;
           font-weight: 700;
         }
@@ -60,91 +56,74 @@ header {
 
         li {
           display: inline-block;
-          padding-left: 20px;
           line-height: 56px;
 
-          .add {
-            display: block;
+          .svg-add {
             width: 14px;
             height: 14px;
-            background: url(../../images/header/add.svg);
-            fill: #fff;
-            background-size: 14px 14px;
-            background-repeat: no-repeat;
-            @include transition-property(all);
-            @include transition-duration(200ms);
+            polygon {
+              fill: #4ccde8;
+              @include transition-property(all);
+              @include transition-duration(200ms);
+            }
 
             &:hover {
-              background: url(../../images/header/hover/add-hover.svg);
-              background-size: 14px 14px;
-              background-repeat: no-repeat;
+              polygon {
+                fill: #ffffff;
+              }
             }
           }
 
-          .month {
-            display: block;
+          .svg-month {
             width: 14px;
             height: 14px;
-            background: url(../../images/header/month.svg);
-            background-size: 14px 14px;
-            background-repeat: no-repeat;
+            fill: #4ccde8;
             @include transition-property(all);
             @include transition-duration(200ms);
 
             &:hover {
-              background: url(../../images/header/hover/month-hover.svg);
-              background-size: 14px 14px;
-              background-repeat: no-repeat;
+              fill: #ffffff;
             }
           }
 
-          .search {
-            display: block;
+          .svg-search {
             width: 14px;
             height: 14px;
-            background: url(../../images/header/search.svg);
-            background-size: 14px 14px;
-            background-repeat: no-repeat;
-            @include transition-property(all);
-            @include transition-duration(200ms);
-
+            path:last-child {
+              fill: #4ccde8;
+              @include transition-property(all);
+              @include transition-duration(200ms);
+            }
             &:hover {
-              background: url(../../images/header/hover/search-hover.svg);
-              background-size: 14px 14px;
-              background-repeat: no-repeat;
+              path:last-child {
+                fill: #ffffff;
+              }
             }
           }
 
-          .notification {
-            display: block;
+          .svg-notification {
             width: 14px;
             height: 14px;
-            background: url(../../images/header/notification.svg);
-            background-size: 14px 14px;
-            background-repeat: no-repeat;
-            @include transition-property(all);
-            @include transition-duration(200ms);
+            path {
+              fill: #4ccde8;
+              @include transition-property(all);
+              @include transition-duration(200ms);
+            }
 
             &:hover {
-              background: url(../../images/header/hover/notification-hover.svg);
-              background-size: 14px 14px;
-              background-repeat: no-repeat;
+              path {
+                fill: #ffffff;
+              }
             }
           }
 
           a {
             text-decoration: none;
-          }
 
-          img {
-            vertical-align: top;
-            height: 56px;
-            width: 56px;
-          }
-
-          &:last-child {
-            a {
-              padding-left: 0;
+            img {
+              vertical-align: top;
+              height: 56px;
+              width: 56px;
             }
           }
         }
