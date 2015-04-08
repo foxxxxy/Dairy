@@ -16,20 +16,28 @@ header {
         height: 56px;
         border: 0;
         background: rgba(0, 0, 0, 0.5) url(../../images/header/menu.svg) no-repeat center;
-        //        background: rgba(0, 0, 0, 0.5) url(../../images/header/menu.svg) no-repeat center;
         background-size: 16px 16px;
 
         &:active {
           background-color: #4ccde8;
           border: 0;
         }
+
+        &:hover {
+          background-color: #4ccde8;
+        }
       }
 
     }
 
     .collapse-navbar {
+      text-align: center;
       height: 56px;
       background-color: rgba(0, 0, 0, 0.5);
+
+      .dairy {
+        float: left;
+      }
 
       a {
         &:first-child {
@@ -40,12 +48,17 @@ header {
       }
 
       .date {
+        position: relative;
         display: inline-block;
         text-align: center;
 
         time {
-          text-decoration: underline;
+          //          text-decoration: underline;
           font-weight: 700;
+
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
 
