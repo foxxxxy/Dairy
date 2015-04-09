@@ -17,10 +17,11 @@ header {
         border: 0;
         background: rgba(0, 0, 0, 0.5) url(../../images/header/menu.svg) no-repeat center;
         background-size: 16px 16px;
+        @include transition-property(all);
+        @include transition-duration(200ms);
 
         &:active {
           background-color: #4ccde8;
-          border: 0;
         }
 
         &:hover {
@@ -44,6 +45,12 @@ header {
           padding-left: 20px;
           font-family: "Roboto", sans-serif;
           font-weight: 700;
+          @include transition-property(all);
+          @include transition-duration(200ms);
+        }
+
+        &:hover {
+          color: #dedede;
         }
       }
 
@@ -51,14 +58,39 @@ header {
         position: relative;
         display: inline-block;
         text-align: center;
+        height: 35px;
+        @include transition-property(all);
+        @include transition-duration(200ms);
 
         time {
-          //          text-decoration: underline;
+          padding-right: 5px;
           font-weight: 700;
+        }
 
-          &:hover {
-            text-decoration: underline;
-          }
+        &::after {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 58px;
+          height: 1px;
+          background: #fff;
+          content: '';
+        }
+
+        &:hover {
+          color: #dedede;
+        }
+      }
+
+      .year {
+        &::after {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 38px;
+          height: 1px;
+          background: #fff;
+          content: '';
         }
       }
 
@@ -127,6 +159,25 @@ header {
               path {
                 fill: #ffffff;
               }
+            }
+          }
+
+          .enabled {
+            position: relative;
+            .svg-notification {
+              path {
+                fill: #05cf00;
+              }
+            }
+            span{
+              position: absolute;
+              top: -18px;
+              right: -3px;
+              display: inline-block;
+              background-color: #06ed00;
+              width: 10px;
+              height: 10px;
+              @include border-radius(50%);
             }
           }
 
