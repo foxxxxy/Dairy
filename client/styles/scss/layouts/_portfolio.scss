@@ -33,7 +33,7 @@
 
         figcaption {
           text-align: center;
-          line-height: 120px;
+          line-height: 140px;
           padding: 0;
 
           p {
@@ -59,6 +59,7 @@
       margin: 10px 0;
       height: 140px;
 
+
       &:hover {
         figcaption {
           background-color: rgba(0, 0, 0, 0);
@@ -75,27 +76,33 @@
         background-size: cover;
         background-repeat: no-repeat;
       }
-    }
-    figcaption {
-      left: 0;
-      bottom: 0;
-      position: absolute;
-      padding-left: 15px;
-      width: 100%;
-      //      if you wish enabled hover in all images
-      //      height: 100%;
-      line-height: 1;
+      figcaption {
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        padding-left: 15px;
+        width: 100%;
+//              if you wish enabled hover in all images
+//        height: 140px;
+        line-height: 1;
+        @include transition-property(all);
+        @include transition-duration(200ms);
 
-      h3 {
-        font-family: "Roboto", sans-serif;
-        font-weight: 100;
-        @include lines();
-      }
 
-      p {
-        font-family: "Roboto", sans-serif;
-        font-size: 12px;
-        color: #4ccde8;
+        h3 {
+          padding-top: 65px;
+          margin-bottom: 5px;
+          font-family: "Roboto", sans-serif;
+          font-weight: 100;
+          @include lines();
+        }
+
+        p {
+          margin: 0;
+          font-family: "Roboto", sans-serif;
+          font-size: 12px;
+          color: #4ccde8;
+        }
       }
     }
   }

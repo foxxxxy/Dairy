@@ -1,5 +1,5 @@
-main{
-  background-color: rgba(216,216,216,1);
+main {
+  background-color: rgba(216, 216, 216, 1);
   @include filter-gradient(#d8d8d8, #ffffff, vertical);
-  @include background-image(linear-gradient(top, rgba(216,216,216,1) 0%, rgba(255,255,255,1) 100%));
+  @include background-image(linear-gradient(top, rgba(216, 216, 216, 1) 0%, rgba(255, 255, 255, 1) 100%));
 }

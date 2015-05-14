@@ -6060,8 +6060,9 @@ header nav .collapse-navbar {
 /* line 39, ../scss/widgets/_header.scss */
 header nav .collapse-navbar .dairy {
   float: left;
+  line-height: 56px;
 }
-/* line 44, ../scss/widgets/_header.scss */
+/* line 45, ../scss/widgets/_header.scss */
 header nav .collapse-navbar a:first-child {
   padding-left: 20px;
   font-family: "Roboto", sans-serif;
@@ -6071,11 +6072,11 @@ header nav .collapse-navbar a:first-child {
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 52, ../scss/widgets/_header.scss */
+/* line 53, ../scss/widgets/_header.scss */
 header nav .collapse-navbar a:hover {
   color: #dedede;
 }
-/* line 57, ../scss/widgets/_header.scss */
+/* line 58, ../scss/widgets/_header.scss */
 header nav .collapse-navbar .date {
   position: relative;
   display: inline-block;
@@ -6086,12 +6087,12 @@ header nav .collapse-navbar .date {
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 65, ../scss/widgets/_header.scss */
+/* line 66, ../scss/widgets/_header.scss */
 header nav .collapse-navbar .date time {
   padding-right: 5px;
   font-weight: 700;
 }
-/* line 70, ../scss/widgets/_header.scss */
+/* line 71, ../scss/widgets/_header.scss */
 header nav .collapse-navbar .date::after {
   position: absolute;
   bottom: 0;
@@ -6101,11 +6102,11 @@ header nav .collapse-navbar .date::after {
   background: #fff;
   content: '';
 }
-/* line 80, ../scss/widgets/_header.scss */
+/* line 81, ../scss/widgets/_header.scss */
 header nav .collapse-navbar .date:hover {
   color: #dedede;
 }
-/* line 86, ../scss/widgets/_header.scss */
+/* line 87, ../scss/widgets/_header.scss */
 header nav .collapse-navbar .year::after {
   position: absolute;
   bottom: 0;
@@ -6115,23 +6116,23 @@ header nav .collapse-navbar .year::after {
   background: #fff;
   content: '';
 }
-/* line 97, ../scss/widgets/_header.scss */
+/* line 98, ../scss/widgets/_header.scss */
 header nav .collapse-navbar .navbar-right {
   margin: 0;
   float: right;
   font-size: 0;
 }
-/* line 102, ../scss/widgets/_header.scss */
+/* line 103, ../scss/widgets/_header.scss */
 header nav .collapse-navbar .navbar-right li {
   display: inline-block;
   line-height: 56px;
 }
-/* line 106, ../scss/widgets/_header.scss */
+/* line 107, ../scss/widgets/_header.scss */
 header nav .collapse-navbar .navbar-right li .svg-add {
   width: 14px;
   height: 14px;
 }
-/* line 109, ../scss/widgets/_header.scss */
+/* line 110, ../scss/widgets/_header.scss */
 header nav .collapse-navbar .navbar-right li .svg-add polygon {
   fill: #4ccde8;
   -webkit-transition-property: all;
@@ -6139,11 +6140,11 @@ header nav .collapse-navbar .navbar-right li .svg-add polygon {
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 116, ../scss/widgets/_header.scss */
+/* line 117, ../scss/widgets/_header.scss */
 header nav .collapse-navbar .navbar-right li .svg-add:hover polygon {
   fill: #ffffff;
 }
-/* line 122, ../scss/widgets/_header.scss */
+/* line 123, ../scss/widgets/_header.scss */
 header nav .collapse-navbar .navbar-right li .svg-month {
   width: 14px;
   height: 14px;
@@ -6153,16 +6154,16 @@ header nav .collapse-navbar .navbar-right li .svg-month {
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 129, ../scss/widgets/_header.scss */
+/* line 130, ../scss/widgets/_header.scss */
 header nav .collapse-navbar .navbar-right li .svg-month:hover {
   fill: #ffffff;
 }
-/* line 134, ../scss/widgets/_header.scss */
+/* line 135, ../scss/widgets/_header.scss */
 header nav .collapse-navbar .navbar-right li .svg-search {
   width: 14px;
   height: 14px;
 }
-/* line 137, ../scss/widgets/_header.scss */
+/* line 138, ../scss/widgets/_header.scss */
 header nav .collapse-navbar .navbar-right li .svg-search path:last-child {
   fill: #4ccde8;
   -webkit-transition-property: all;
@@ -6170,16 +6171,16 @@ header nav .collapse-navbar .navbar-right li .svg-search path:last-child {
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 143, ../scss/widgets/_header.scss */
+/* line 144, ../scss/widgets/_header.scss */
 header nav .collapse-navbar .navbar-right li .svg-search:hover path:last-child {
   fill: #ffffff;
 }
-/* line 149, ../scss/widgets/_header.scss */
+/* line 150, ../scss/widgets/_header.scss */
 header nav .collapse-navbar .navbar-right li .svg-notification {
   width: 14px;
   height: 14px;
 }
-/* line 152, ../scss/widgets/_header.scss */
+/* line 153, ../scss/widgets/_header.scss */
 header nav .collapse-navbar .navbar-right li .svg-notification path {
   fill: #4ccde8;
   -webkit-transition-property: all;
@@ -6187,11 +6188,11 @@ header nav .collapse-navbar .navbar-right li .svg-notification path {
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 159, ../scss/widgets/_header.scss */
+/* line 160, ../scss/widgets/_header.scss */
 header nav .collapse-navbar .navbar-right li .svg-notification:hover path {
   fill: #ffffff;
 }
-/* line 165, ../scss/widgets/_header.scss */
+/* line 166, ../scss/widgets/_header.scss */
 header nav .collapse-navbar .navbar-right li .enabled {
   position: relative;
   font-size: 10px;
@@ -6201,11 +6202,11 @@ header nav .collapse-navbar .navbar-right li .enabled {
   text-align: center;
   line-height: 11px;
 }
-/* line 175, ../scss/widgets/_header.scss */
+/* line 176, ../scss/widgets/_header.scss */
 header nav .collapse-navbar .navbar-right li .enabled .svg-notification path {
   fill: #05cf00;
 }
-/* line 179, ../scss/widgets/_header.scss */
+/* line 180, ../scss/widgets/_header.scss */
 header nav .collapse-navbar .navbar-right li .enabled span {
   position: absolute;
   top: -10px;
@@ -6219,11 +6220,11 @@ header nav .collapse-navbar .navbar-right li .enabled span {
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 192, ../scss/widgets/_header.scss */
+/* line 193, ../scss/widgets/_header.scss */
 header nav .collapse-navbar .navbar-right li a {
   text-decoration: none;
 }
-/* line 195, ../scss/widgets/_header.scss */
+/* line 196, ../scss/widgets/_header.scss */
 header nav .collapse-navbar .navbar-right li a img {
   vertical-align: top;
   height: 56px;
@@ -6279,7 +6280,7 @@ header nav .collapse-navbar .navbar-right li a img {
 /* line 34, ../scss/layouts/_portfolio.scss */
 .homepage .portfolio .add a .add-photo figcaption {
   text-align: center;
-  line-height: 120px;
+  line-height: 140px;
   padding: 0;
 }
 /* line 39, ../scss/layouts/_portfolio.scss */
@@ -6300,7 +6301,7 @@ header nav .collapse-navbar .navbar-right li a img {
   margin: 10px 0;
   height: 140px;
 }
-/* line 63, ../scss/layouts/_portfolio.scss */
+/* line 64, ../scss/layouts/_portfolio.scss */
 .homepage .portfolio a figure:hover figcaption {
   background-color: transparent;
   *zoom: 1;
@@ -6312,7 +6313,7 @@ header nav .collapse-navbar .navbar-right li a img {
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #000000 100%);
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #000000 100%);
 }
-/* line 70, ../scss/layouts/_portfolio.scss */
+/* line 71, ../scss/layouts/_portfolio.scss */
 .homepage .portfolio a figure .image {
   overflow: hidden;
   width: 100%;
@@ -6322,16 +6323,22 @@ header nav .collapse-navbar .navbar-right li a img {
   background-repeat: no-repeat;
 }
 /* line 79, ../scss/layouts/_portfolio.scss */
-.homepage .portfolio a figcaption {
+.homepage .portfolio a figure figcaption {
   left: 0;
   bottom: 0;
   position: absolute;
   padding-left: 15px;
   width: 100%;
   line-height: 1;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
 }
-/* line 89, ../scss/layouts/_portfolio.scss */
-.homepage .portfolio a figcaption h3 {
+/* line 92, ../scss/layouts/_portfolio.scss */
+.homepage .portfolio a figure figcaption h3 {
+  padding-top: 65px;
+  margin-bottom: 5px;
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   text-overflow: ellipsis;
@@ -6339,11 +6346,24 @@ header nav .collapse-navbar .navbar-right li a img {
   word-wrap: break-word;
   overflow: hidden;
 }
-/* line 95, ../scss/layouts/_portfolio.scss */
-.homepage .portfolio a figcaption p {
+/* line 100, ../scss/layouts/_portfolio.scss */
+.homepage .portfolio a figure figcaption p {
+  margin: 0;
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   color: #4ccde8;
+}
+@media screen and (max-width: 750px) {
+  /* line 6, ../scss/layouts/_homepage.scss */
+  .homepage .container {
+    margin: 0 50px;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* line 16, ../scss/layouts/_homepage.scss */
+  .homepage header nav .collapse-navbar a:first-child {
+    padding-left: 15px;
+  }
 }
 
 /* line 3, ../scss/core/_grid.scss */
